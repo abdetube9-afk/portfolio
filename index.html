@@ -1,0 +1,242 @@
+>Baga nagaan dhufte!</h1>
+<p>Ani Abdu dha. Programming barachuu yoo barbaadde koottu baradhu na waliin.</p>
+<button>Start</button>
+<h1>How can build programming</h1>
+<h2>Coding Learnig (Barachuu feetaa?)</h2>
+<img src="https://picsum.photos/200" alt="suuraa">
+<img src="https://picsum.photos/200" alt="">
+<a href="https://www.tiktok.com/@abdu_hd12">TikTok keenya</a>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul><style>
+  body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  h1 {
+    color: darkblue;
+  }
+  p {
+    color: gray;
+    font-size: 20px;
+  }
+  button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+</style>
+<style>
+  body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  h1 {
+    color: darkblue;
+  }
+  p {
+    color: gray;
+    font-size: 20px;
+  }
+  button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    font-size: 24px;
+  }
+</style><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 { color: darkblue; }
+    p { color: gray; font-size: 20px; }
+    button {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Baga nagaan dhufte!</h1>
+  <p id="barreeffama">Ani Abdu dha. Programming baradha.</p>
+  <button onclick="tuqi()">Na tuqi</button>
+
+  <script>
+    let lakkoofsa = 0;
+
+    function tuqi() {
+      lakkoofsa = lakkoofsa + 5;
+      document.getElementById("barreeffama").innerText =
+        "Si tuqxe: " + lakkoofsa + " altokko!";<script>
+  let lakkoofsa = 0;
+
+  function tuqi() {
+    lakkoofsa = lakkoofsa + 1;
+    let ergaa = "";
+
+    if (lakkoofsa < 3) {
+      ergaa = "Si tuqxe: " + lakkoofsa + " altokko!";
+    } else if (lakkoofsa < 10) {
+      ergaa = "Gaarii! Itti fufi, " + lakkoofsa + " ga'ee jirta! 🔥";
+    } else {
+      ergaa = "Baga gammaddan! Ati " + lakkoofsa + " tuqxe! 🎉";
+    }
+
+    document.getElementById("barreeffama").innerText = ergaa;
+  }
+</script>
+    }
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 20px;
+    }
+    input {
+      width: 80%;
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 18px;
+      border: 1px solid gray;
+      border-radius: 8px;
+    }
+    button {
+      background-color: green;
+      color: white;
+      padding: 12px 18px;
+      margin: 4px;
+      border: none;
+      border-radius: 8px;
+      font-size: 20px;
+    }
+    #bu-aa {
+      font-size: 28px;
+      color: darkblue;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculator Koo</h1>
+
+  <input type="number" id="lakk1" placeholder="Lakkoofsa 1">
+  <br>
+  <input type="number" id="lakk2" placeholder="Lakkoofsa 2">
+  <br>
+
+  <button onclick="herregi('+')">+</button>
+  <button onclick="herregi('-')">-</button>
+  <button onclick="herregi('*')">×</button>
+  <button onclick="herregi('/')">÷</button>
+
+  <p id="bu-aa">Bu'aan asitti mul'ata</p>
+
+  <script>
+    function herregi(mallattoo) {
+      let a = Number(document.getElementById("lakk1").value);
+      let b = Number(document.getElementById("lakk2").value);
+      let bu = 10;
+
+      if (mallattoo === "+") {
+        bu = a + b;<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 20px;
+    }
+    input {
+      width: 65%;
+      padding: 12px;
+      font-size: 18px;
+      border: 1px solid gray;
+      border-radius: 8px;
+    }
+    button {
+      background-color: green;
+      color: white;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+    ul { list-style: none; padding: 0; }
+    li {
+      background: white;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 20px;
+    }
+    li button {
+      background-color: red;
+      padding: 6px 10px;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Barataa</h1>
+  <input type="text" id="hojii" placeholder="Hojii haaraa...">
+  <button onclick="dabali()">+</button>
+  <ul id="tarree"></ul>
+
+  <script>
+    let hojiilee = [];
+
+    function dabali() {
+      let barruu = document.getElementById("hojii").value;
+      if (barruu === "") {
+        return;
+      }
+      hojiilee.push(barruu);
+      document.getElementById("hojii").value = "";
+      agarsiisi();
+    }
+
+    function haqi(lakkoofsa) {
+      hojiilee.splice(lakkoofsa, 1);
+      agarsiisi();
+    }
+
+    function agarsiisi() {
+      let html = "";
+      for (let i = 0; i < hojiilee.length; i++) {
+        html += "<li>" + hojiilee[i] +
+          "<button onclick='haqi(" + i + ")'>X</button></li>";
+      }
+      document.getElementById("tarree").innerHTML = html
