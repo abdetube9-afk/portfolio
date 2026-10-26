@@ -1,322 +1,458 @@
->Welcome to Abdu's Portfolio
 
-Learn Web Development Step by Step
-
-Welcome to Abdu's Portfolio, a learning platform created to help beginners understand web development in a simple and practical way.
-
-Our goal is to make learning technology easier for everyone, including students, young developers, and people who want to build their first website using a computer or mobile phone.
-
-On this website, you can learn the basics of HTML, CSS, and JavaScript. You can also explore simple examples, practice coding, and develop the skills needed to create your own web projects.
-
-What You Can Learn Here
-
-1. HTML: Build the Structure of a Website
-
-HTML stands for HyperText Markup Language. It is used to organize the content of a web page, including headings, paragraphs, images, links, and forms.
-
-For example, HTML helps you create the main structure of a personal portfolio, a learning website, or a simple blog.
-
-2. CSS: Make Your Website Beautiful
-
-CSS stands for Cascading Style Sheets. It controls the appearance of a website, including colors, fonts, spacing, layouts, and mobile-friendly designs.
-
-Learning CSS helps you transform a simple page into a professional-looking website that works on different screen sizes.
-
-3. JavaScript: Make Your Website Interactive
-
-JavaScript is a programming language that adds interactive features to websites.
-
-With JavaScript, you can create calculators, interactive menus, simple quizzes, buttons, and other useful tools.
-
-Why Learn Web Development?
-
-Learning web development can help you express your ideas, solve problems, and create useful digital projects.
-
-You do not need to understand everything on your first day. Start with small lessons, practice regularly, and gradually move to more advanced projects.
-
-A mobile phone and an internet connection can help you begin learning. As you progress, you can explore more development tools and build a portfolio of your work.
-
-Practical Projects for Beginners
-
-Here are some projects you can build while learning:
-
-- A personal portfolio website
-- A simple calculator
-- A student study timetable
-- A basic quiz application
-- A responsive landing page
-- A simple educational website
-
-Each project gives you an opportunity to practice what you learn and improve your skills.
-
-Tips for Successful Learning
-
-1. Learn one concept at a time.
-2. Practice by writing code yourself.
-3. Read error messages carefully and try to understand them.
-4. Build small projects before attempting large applications.
-5. Keep improving your existing projects.
-6. Share your work and learn from feedback.
-
-About This Website
-
-Abdu's Portfolio is a personal learning and project website focused on web development, technology, and practical digital skills.
-
-The purpose of this website is to share useful learning materials and demonstrate projects created during the journey of learning web development.
-
-Our Goal
-
-Our goal is to make technology easier to understand and encourage more people to explore web development.
-
-Whether you are a student, a beginner, or someone curious about coding, you can start learning today and improve step by step.
-
-Start small. Practice consistently. Build something useful.
-
-Thank you for visiting Abdu's Portfolio.
-
-Contact
-
-For questions, suggestions, or feedback about this website, please use the contact information provided on the website when available.
-
-© 2026 Abdu's Portfolio. All rights reserved.!</h1>
-<p>Ani Abdu dha. Programming barachuu yoo barbaadde koottu baradhu na waliin.</p>
-<button>Start</button>
-<h1>How can build programming</h1>
-<h2>Coding Learnig (Barachuu feetaa?)</h2>
-<img src="https://picsum.photos/200" alt="suuraa">
-<img src="https://picsum.photos/200" alt="">
-<a href="https://www.tiktok.com/@abdu_hd12">TikTok keenya</a>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-</ul><style>
-  body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  h1 {
-    color: darkblue;
-  }
-  p {
-    color: gray;
-    font-size: 20px;
-  }
-  button {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-  }
-</style>
-<style>
-  body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  h1 {
-    color: darkblue;
-  }
-  p {
-    color: gray;
-    font-size: 20px;
-  }
-  button {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 9px;
-    font-size: 24px;
-  }
-</style><!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Abdu HD | Portfolio & Freelance Services</title>
+  <meta name="description" content="Visit Abdu HD's professional portfolio to explore web development, digital services, projects and freelance work.">
+  <meta name="theme-color" content="#0b1020">
+
   <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a2e;
+      --text: #f5f7ff;
+      --muted: #aab4cc;
+      --accent: #58e6b5;
+      --blue: #8da7ff;
+      --border: rgba(255,255,255,.1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
     body {
-      background-color: #f0f8ff;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container { width: min(1100px, 90%); margin: auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11,16,32,.95);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo { font-size: 1.45rem; font-weight: 800; }
+    .logo span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-links a { color: var(--muted); font-size: .95rem; }
+    .nav-links a:hover { color: var(--accent); }
+
+    .menu-btn {
+      display: none;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .hero { padding: 90px 0 75px; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr .8fr;
+      align-items: center;
+      gap: 45px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.7rem);
+      line-height: 1.12;
+      margin: 18px 0;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .hero p, .section-intro {
+      color: var(--muted);
+      max-width: 650px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #07131a;
+      transition: transform .2s;
+    }
+
+    .btn:hover { transform: translateY(-3px); }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .profile-card {
+      background: linear-gradient(145deg, #192540, #101728);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      text-align: center;
+      box-shadow: 0 20px 70px rgba(0,0,0,.2);
+    }
+
+    .avatar {
+      width: 115px;
+      height: 115px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: #07131a;
+      background: linear-gradient(135deg, var(--accent), var(--blue));
+    }
+
+    .profile-card p { margin-top: 8px; }
+
+    section { padding: 70px 0; }
+
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 12px;
+    }
+
+    .section-intro { margin-bottom: 30px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 25px;
+      border-radius: 17px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+    }
+
+    .card .icon { font-size: 1.8rem; }
+    .card h3 { margin: 12px 0 8px; }
+    .card p { color: var(--muted); font-size: .95rem; }
+    .card a { color: var(--accent); display: inline-block; margin-top: 15px; }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      padding: 9px 15px;
+      border-radius: 30px;
+      color: var(--muted);
+    }
+
+    .ad-box {
+      border: 1px dashed #65718a;
+      border-radius: 14px;
+      padding: 22px 15px;
+      text-align: center;
+      margin: 25px auto;
+      max-width: 970px;
+      color: var(--muted);
+      background: rgba(255,255,255,.02);
+      font-size: .9rem;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, #17253a, #11182a);
+      border: 1px solid var(--border);
+      padding: 35px;
+      border-radius: 22px;
+    }
+
+    .contact-box p { color: var(--muted); margin: 10px 0 20px; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 25px 0;
+      color: var(--muted);
+      font-size: .9rem;
       text-align: center;
     }
-    h1 { color: darkblue; }
-    p { color: gray; font-size: 20px; }
-    button {
-      background-color: green;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      font-size: 18px;
+
+    @media (max-width: 760px) {
+      .hero { padding-top: 55px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      .menu-btn { display: block; }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        padding: 22px 5%;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links.open { display: flex; }
+      .profile-card { max-width: 450px; }
+      .contact-box { padding: 25px; }
     }
   </style>
 </head>
+
 <body>
-  <h1>Baga nagaan dhufte!</h1>
-  <p id="barreeffama">Ani Abdu dha. Programming baradha.</p>
-  <button onclick="tuqi()">Na tuqi</button>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">Abdu <span>HD.</span></a>
+
+      <button class="menu-btn" id="menuBtn"
+        aria-label="Open navigation menu" aria-expanded="false">
+        ☰ Menu
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Welcome to my portfolio</div>
+          <h1>Hello, I'm <span>Abdu HD</span></h1>
+          <p>
+            I am building my skills in digital services, web technologies
+            and online content creation. Explore my work, discover my
+            services and contact me for collaboration.
+          </p>
+
+          <div class="actions">
+            <!-- https://www.upwork.com/freelancers/~01473be705af340414 -->
+            <a class="btn" href="https://www.upwork.com/"
+               target="_blank" rel="noopener noreferrer">
+              Visit Upwork
+            </a>
+            <a class="btn secondary" href="#projects">View My Projects</a>
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <div class="avatar">AH</div>
+          <h2>Abdu HD</h2>
+          <p>Digital Creator · Aspiring Freelancer</p>
+          <p>Learning, creating and growing every day.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advertisement placement: ads will NOT appear until you add an approved ad code -->
+    <div class="container">
+      <div class="ad-box">
+        Advertisement
+        <br>
+        <small>Ad space — available for approved advertising</small>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-intro">
+          I am interested in technology, online business, digital
+          creativity and continuous learning. My goal is to develop
+          useful skills and deliver quality work to clients.
+        </p>
+
+        <h3 style="margin-bottom:15px">My Skills</h3>
+        <div class="skills">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript Basics</span>
+          <span class="skill">Content Creation</span>
+          <span class="skill">Social Media</span>
+          <span class="skill">Research & Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <p class="section-intro">
+          These are service areas I am developing. Only advertise
+          services you can actually deliver to clients.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">💻</div>
+            <h3>Basic Website Design</h3>
+            <p>Simple responsive portfolio pages using HTML and CSS.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🎬</div>
+            <h3>Digital Content</h3>
+            <p>Creative ideas and short-form content for social media.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📱</div>
+            <h3>abdu_hd12</h3>
+            <p>Content planning and basic profile presentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-intro">
+          Add your real projects here as you complete them.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">🌐</div>
+            <h3>Personal Portfolio</h3>
+            <p>A responsive website introducing my work and services.</p>
+            <a href="#home">Explore this website →</a>
+          </article>
+
+          <article class="card">
+            <div class="icon">📹</div>
+            <h3>Video Content</h3>
+            <p>Short-form video ideas and creative social media posts.</p>
+            <!-- Add a real public project link here when available -->
+          </article>
+
+          <article class="card">
+            <div class="icon">📚</div>
+            <h3>Learning Projects</h3>
+            <p>Small projects created while improving my digital skills.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="ad-box">
+        Advertisement
+        <br>
+        <small>Second ad placement — subject to advertising approval</small>
+      </div>
+    </div>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2 class="section-title">Let's Work Together</h2>
+          <p>
+            Have a project or collaboration idea? Contact me by email
+            or visit my freelance profile.
+          </p>
+
+          <!-- Replace the email below with your real email address -->
+          <div class="actions">
+            <a class="btn" href="mailto:YOUR_EMAIL@gmail.com">
+              Email Me
+            </a>
+            <a class="btn secondary"
+               href="https://www.upwork.com/"
+               target="_blank" rel="noopener noreferrer">
+              My Upwork
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Abdu HD. All rights reserved.</p>
+      <p>Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
 
   <script>
-    let lakkoofsa = 0;
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
 
-    function tuqi() {
-      lakkoofsa = lakkoofsa + 5;
-      document.getElementById("barreeffama").innerText =
-        "Si tuqxe: " + lakkoofsa + " altokko!";<script>
-  let lakkoofsa = 0;
+    menuBtn.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(isOpen));
+    });
 
-  function tuqi() {
-    lakkoofsa = lakkoofsa + 1;
-    let ergaa = "";
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
 
-    if (lakkoofsa < 3) {
-      ergaa = "Si tuqxe: " + lakkoofsa + " altokko!";
-    } else if (lakkoofsa < 10) {
-      ergaa = "Gaarii! Itti fufi, " + lakkoofsa + " ga'ee jirta! 🔥";
-    } else {
-      ergaa = "Baga gammaddan! Ati " + lakkoofsa + " tuqxe! 🎉";
-    }
-
-    document.getElementById("barreeffama").innerText = ergaa;
-  }
-</script>
-    }
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
   </script>
 </body>
-</html><!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f8ff;
-      text-align: center;
-      padding: 20px;
-    }
-    input {
-      width: 80%;
-      padding: 12px;
-      margin: 8px 0;
-      font-size: 18px;
-      border: 1px solid gray;
-      border-radius: 8px;
-    }
-    button {
-      background-color: green;
-      color: white;
-      padding: 12px 18px;
-      margin: 4px;
-      border: none;
-      border-radius: 8px;
-      font-size: 20px;
-    }
-    #bu-aa {
-      font-size: 28px;
-      color: darkblue;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Calculator Koo</h1>
-
-  <input type="number" id="lakk1" placeholder="Lakkoofsa 1">
-  <br>
-  <input type="number" id="lakk2" placeholder="Lakkoofsa 2">
-  <br>
-
-  <button onclick="herregi('+')">+</button>
-  <button onclick="herregi('-')">-</button>
-  <button onclick="herregi('*')">×</button>
-  <button onclick="herregi('/')">÷</button>
-
-  <p id="bu-aa">Bu'aan asitti mul'ata</p>
-
-  <script>
-    function herregi(mallattoo) {
-      let a = Number(document.getElementById("lakk1").value);
-      let b = Number(document.getElementById("lakk2").value);
-      let bu = 10;
-
-      if (mallattoo === "+") {
-        bu = a + b;<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f8ff;
-      text-align: center;
-      padding: 20px;
-    }
-    input {
-      width: 65%;
-      padding: 12px;
-      font-size: 18px;
-      border: 1px solid gray;
-      border-radius: 8px;
-    }
-    button {
-      background-color: green;
-      color: white;
-      padding: 12px 16px;
-      border: none;
-      border-radius: 8px;
-      font-size: 18px;
-    }
-    ul { list-style: none; padding: 0; }
-    li {
-      background: white;
-      margin: 8px 0;
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 20px;
-    }
-    li button {
-      background-color: red;
-      padding: 6px 10px;
-      font-size: 16px;
-      margin-left: 10px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Barataa</h1>
-  <input type="text" id="hojii" placeholder="Hojii haaraa...">
-  <button onclick="dabali()">+</button>
-  <ul id="tarree"></ul>
-
-  <script>
-    let hojiilee = [];
-
-    function dabali() {
-      let barruu = document.getElementById("hojii").value;
-      if (barruu === "") {
-        return;
-      }
-      hojiilee.push(barruu);
-      document.getElementById("hojii").value = "";
-      agarsiisi();
-    }
-
-    function haqi(lakkoofsa) {
-      hojiilee.splice(lakkoofsa, 1);
-      agarsiisi();
-    }
-
-    function agarsiisi() {
-      let html = "";
-      for (let i = 0; i < hojiilee.length; i++) {
-        html += "<li>" + hojiilee[i] +
-          "<button onclick='haqi(" + i + ")'>X</button></li>";
-      }
-      document.getElementById("tarree").innerHTML = html
+</html><a class="btn" href="mailto:abdetube9@gmail.com">
+  Email Me
+</a>
